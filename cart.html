@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop By Nguyen</title>
+	<link rel="icon" type="image/x-icon" href="img/cart-shopping-solid.svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- 	mục lục ở trên (logo, home, shop, contact,....) -->
+	<section id ="header">
+			<!-- add logo -->
+		<a href="index.html"><img src="img/logo.png" class = "logo"></a>
+
+		<!-- add navbar-->
+		<div>
+			<ul id = "navbar">
+				
+				<li><a href="index.html">Home</a></li>
+				<!-- class "active" nhận biết đang ở mục nào	 -->			
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+				<li id = "lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+				<a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
+			</ul>
+		</div>
+
+
+<!-- 	phần banner -->
+	</section>
+	<section id="hero-blog" class="about-header">
+		<h2>#let's talk</h2>
+		<h4>Read all case studies about our products!</h4>
+	</section>
+
+
+
+<section id="cart" class="section-p1">
+	<table width="100%">
+<!-- 		phần tiêu đề của bảng -->
+		<thead>
+			<tr>
+				<td>Remove</td>
+				<td>Image</td>
+				<td>Product</td>
+				<td>Price</td>
+				<td>Quantity</td>
+				<td>Subtotal</td>
+			</tr>
+		</thead>
+<!-- 		phần thân của bảng -->
+		<tbody> <!-- table body -->
+			<tr> <!-- table row -->
+				<td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td> <!-- table data -->
+				<td><img src="img/products/f1.jpg"></td>
+				<td>T-shirt very cool</td>
+				<td>$100</td>
+				<td><input type="number" name="" value="1" min="0"></td>
+				<td>$100</td>
+			</tr>
+
+			<tr> <!-- table row -->
+				<td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td> <!-- table data -->
+				<td><img src="img/products/f2.jpg"></td>
+				<td>T-shirt very normal</td>
+				<td>$100</td>
+				<td><input type="number" name="" value="1" min="0"></td>
+				<td>$100</td>
+			</tr>
+
+			<tr> <!-- table row -->
+				<td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td> <!-- table data -->
+				<td><img src="img/products/f3.jpg"></td>
+				<td>T-shirt very bad</td>
+				<td>$100</td>
+				<td><input type="number" name="" value="1" min="0"></td>
+				<td>$100</td>
+			</tr>
+		</tbody>
+	</table>
+	
+</section>
+<!-- phần coupon: mã giảm giá và phần thêm -->
+<section id="cart-add" class="section-p1">
+	<div id="coupon">
+		<h3>Apply coupon</h3>
+		<div>
+			<input type="text" name="" placeholder="Enter Your Coupon">
+			<button class="nomal">Apply</button>
+		</div>
+	</div>
+	<div id="add">
+		<form class="Total">
+			<h3>Cart Total</h3>
+			<table>
+				<tbody>
+					<tr>
+						<td>Cart Subtotal</td>
+						<td>$ 335</td>
+					</tr>
+					<tr>
+						<td>Shipping</td>
+						<td>Free</td>
+					</tr>
+					<tr>
+						<td><b>Total</b></td>
+						<td><b>$ 335</b></td>
+					</tr>
+				</tbody>
+			</table>
+			<button class="nomal">Procced to checkout</button>
+		</form>
+	</div>
+</section>
+<!-- phần footer section -->
+	<footer class="section-p1">
+		<div class="col">
+<div class="contact">
+			<img src="img/logo.png">
+
+<!-- 			phần 'contact'
+ -->		<h4>Contact</h4>
+<!-- 			in đậm chữ trong 'strong' -->
+			<p><strong>Address:</strong>I dont know</p>
+			<p><strong>Phone:</strong>0912345678</p>
+			<p><strong>Hours:</strong>I dont know</p>
+			<div class="follow">
+				<h3>Follow Us</h3>
+<!-- 				các icon mạng xã hội -->
+				<div class="icon">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-pinterest-p"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+</div>
+<!-- 				phần 'about' -->
+<div class="about">
+			<h4>About</h4>
+			<a href="#">About us</a>
+			<a href="#">Delivery Information</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Term & Condition</a>
+			<a href="#">Contact us</a	>
+</div>
+<!-- phần 'my account' -->
+<div class="myAccout">
+			<h4>My Account</h4>
+			<a href="#">Sign In</a>
+			<a href="#">View Cart</a>
+			<a href="#">My Wishlist</a>
+			<a href="#">Track My Oder</a>
+			<a href="#">Help</a>
+</div>
+<!-- phần Install app -->
+<div class="installApp">
+	
+			<h4>Install App</h4>
+			<p>From App Store or Google Play</p>
+			<div class="install">
+				<img src="img/pay/app.jpg">
+				<img src="img/pay/play.jpg">
+			</div>
+			<p>Secured Payment Gateways</p>
+			<div class="pay">
+				<img src="img/pay/pay.png">
+			</div>
+
+</div>
+		</div>
+	</footer>
+
+</body>
+</html>
